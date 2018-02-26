@@ -100,8 +100,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_legal</b> (const s
 <tr class="memitem:a1066b280efa5cb41039585669282fe06"><td class="memItemLeft" align="right" valign="top"><a id="a1066b280efa5cb41039585669282fe06"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>make_move</b> (const string &amp;move)</td></tr>
 <tr class="separator:a1066b280efa5cb41039585669282fe06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf872b8074bfa4c04119317dc3b39af2"><td class="memItemLeft" align="right" valign="top"><a id="abf872b8074bfa4c04119317dc3b39af2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>restart</b> ()</td></tr>
+<tr class="memitem:abf872b8074bfa4c04119317dc3b39af2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain__savitch__14_1_1_othello.html#abf872b8074bfa4c04119317dc3b39af2">restart</a> ()</td></tr>
 <tr class="separator:abf872b8074bfa4c04119317dc3b39af2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3177234195a490eef52343d957e64b5d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmain__savitch__14_1_1_othello.html#a3177234195a490eef52343d957e64b5d">make_skips</a> ()</td></tr>
 <tr class="separator:a3177234195a490eef52343d957e64b5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -200,6 +199,34 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_legal</b> 
 
 </div>
 </div>
+<a id="abf872b8074bfa4c04119317dc3b39af2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf872b8074bfa4c04119317dc3b39af2">&#9670;&nbsp;</a></span>restart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void main_savitch_14::Othello::restart </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>No Parameters, resets the game to the original starting state. </p>
+
+<p>Reimplemented from <a class="el" href="classmain__savitch__14_1_1game.html">main_savitch_14::game</a>.</p>
+
+</div>
+</div>
 <a id="a4ea78b18eea66c944c0a9356349e0fd4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4ea78b18eea66c944c0a9356349e0fd4">&#9670;&nbsp;</a></span>winning()</h2>
 
@@ -224,6 +251,7 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_legal</b> 
 </div><div class="memdoc">
 
 <p>This function evaluates the game board and calcutes which player is winning. </p>
+<p>No parameters are used in the winning function This function counts the amount of piece there are on the game board and if there are more piece then the other then one wins or if there are equal pieces then its a tie.</p>
 <p>returns that the last_mover is winning</p>
 <p>returns that the next_mover is winning.</p>
 <p>returns neutral if the game is currently tied. </p>

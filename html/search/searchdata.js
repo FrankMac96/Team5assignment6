@@ -1,13 +1,9 @@
 var indexSectionsWithContent =
 {
-  0: "dgmoprw",
+  0: "dfgimoprw",
   1: "gop",
   2: "m",
-<<<<<<< HEAD
-  3: "dgmpw",
-=======
-  3: "dgprw",
->>>>>>> 6d38faa3474a64c80a48558d4bd2b0f4cf58e41a
+  3: "dfgimprw",
   4: "r"
 };
 

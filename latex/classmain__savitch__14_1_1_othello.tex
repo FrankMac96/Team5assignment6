@@ -24,8 +24,7 @@ bool {\bfseries is\+\_\+legal} (const string \&move) const
 \mbox{\Hypertarget{classmain__savitch__14_1_1_othello_a1066b280efa5cb41039585669282fe06}\label{classmain__savitch__14_1_1_othello_a1066b280efa5cb41039585669282fe06}} 
 void {\bfseries make\+\_\+move} (const string \&move)
 \item 
-\mbox{\Hypertarget{classmain__savitch__14_1_1_othello_abf872b8074bfa4c04119317dc3b39af2}\label{classmain__savitch__14_1_1_othello_abf872b8074bfa4c04119317dc3b39af2}} 
-void {\bfseries restart} ()
+void \mbox{\hyperlink{classmain__savitch__14_1_1_othello_abf872b8074bfa4c04119317dc3b39af2}{restart}} ()
 \item 
 void \mbox{\hyperlink{classmain__savitch__14_1_1_othello_a3177234195a490eef52343d957e64b5d}{make\+\_\+skips}} ()
 \item 
@@ -74,7 +73,17 @@ int {\bfseries w}
 \subsubsection{\texorpdfstring{make\+\_\+skips()}{make\_skips()}}
 {\footnotesize\ttfamily void main\+\_\+savitch\+\_\+14\+::\+Othello\+::make\+\_\+skips (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-This function increments the value of skips. If this value ever reaches 2, the game will end. This value reaches 2 only if the human and the computer both skip one after another. \mbox{\Hypertarget{classmain__savitch__14_1_1_othello_a4ea78b18eea66c944c0a9356349e0fd4}\label{classmain__savitch__14_1_1_othello_a4ea78b18eea66c944c0a9356349e0fd4}} 
+This function increments the value of skips. If this value ever reaches 2, the game will end. This value reaches 2 only if the human and the computer both skip one after another. \mbox{\Hypertarget{classmain__savitch__14_1_1_othello_abf872b8074bfa4c04119317dc3b39af2}\label{classmain__savitch__14_1_1_othello_abf872b8074bfa4c04119317dc3b39af2}} 
+\index{main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}!restart@{restart}}
+\index{restart@{restart}!main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}}
+\subsubsection{\texorpdfstring{restart()}{restart()}}
+{\footnotesize\ttfamily void main\+\_\+savitch\+\_\+14\+::\+Othello\+::restart (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+No Parameters, resets the game to the original starting state. 
+
+Reimplemented from \mbox{\hyperlink{classmain__savitch__14_1_1game}{main\+\_\+savitch\+\_\+14\+::game}}.
+
+\mbox{\Hypertarget{classmain__savitch__14_1_1_othello_a4ea78b18eea66c944c0a9356349e0fd4}\label{classmain__savitch__14_1_1_othello_a4ea78b18eea66c944c0a9356349e0fd4}} 
 \index{main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}!winning@{winning}}
 \index{winning@{winning}!main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}}
 \subsubsection{\texorpdfstring{winning()}{winning()}}
@@ -83,6 +92,8 @@ This function increments the value of skips. If this value ever reaches 2, the g
 
 
 This function evaluates the game board and calcutes which player is winning. 
+
+No parameters are used in the winning function This function counts the amount of piece there are on the game board and if there are more piece then the other then one wins or if there are equal pieces then its a tie.
 
 returns that the last\+\_\+mover is winning
 
