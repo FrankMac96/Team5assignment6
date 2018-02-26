@@ -1,3 +1,5 @@
+///Contains the class game and the declarations of its functions.
+
 // File: game.h (part of the namespace main_savitch_14)
 
 

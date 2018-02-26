@@ -1,3 +1,5 @@
+///Contains strings to change the color of the font.
+
 //***********************************************************
 //
 //  File:     colors.h

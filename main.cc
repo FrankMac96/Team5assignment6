@@ -1,3 +1,5 @@
+///Runs a game of othello.
+
 // Brock Ferrell
 // CS2401
 // November 23, 2015
