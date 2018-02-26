@@ -1,3 +1,4 @@
+///@file othello.h
 ///Creates a class called Othello and declares its functions. Includes game.h , piece.h, and colors.h
 
 // Brock Ferrell
