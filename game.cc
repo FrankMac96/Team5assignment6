@@ -1,5 +1,5 @@
 // File: game.cxx
-///Assignment6 Documentation TESTTEST
+///Assignment6 Documentation 
 /// This file contains the functions for game.cc. These functions allow the player to play othello until the game reaches a winner or tie. 
 #include <cassert>    /// Provides assert
 #include <climits>    /// Provides INT_MAX and INT_MIN
@@ -28,19 +28,19 @@ game::who game::play( )
 {
 	restart( );
 
-	while (!is_game_over( ))
+	while (!is_game_over( )) ///executes while the game is not over.
 	{
-		display_status( );
-		whosTurn();
+		display_status( ); ///displays board status
+		whosTurn(); ///checks whose turn it is.
 		if (last_mover( ) == COMPUTER) {
 			countingPieces();
-			make_human_move( );
+			make_human_move( ); ///makes human move
 		}
 		else {
-			make_computer_move( );
+			make_computer_move( );  ///makes computer move.
 		}
 	}
-	display_status( );
+	display_status( ); ///displays board status
 	return HUMAN;
 }
 
@@ -76,11 +76,11 @@ game::who game::winning()const
 	int value = evaluate();
 
 	if (value > 0) {
-		return last_mover();
+		return last_mover(); ///returns that the last_mover is winning
 	} else if (value < 0) {
-		return next_mover();
+		return next_mover(); ///returns that the next_mover is winning.
 	} else {
-		return NEUTRAL;
+		return NEUTRAL; ///returns neutral if the game is currently tied.
 	}
 
 }
@@ -136,15 +136,16 @@ int game::eval_with_lookahead(int look_ahead, int beat_this)
 }
 
 void game::make_computer_move( )
+/// This funnction generates a computer move.
 {
-	queue<string> moves;
-	int value;
-	int best_value;
-	string best_move;
-	game* future;
+	queue<string> moves; ///creates a queue of strings.
+	int value; ///holds move value.
+	int best_value;  ///holds best move value.
+	string best_move; ///holds best move location.
+	game* future; ///future game
 
 	// Compute all legal moves that the computer could make.
-	compute_moves(moves);
+	compute_moves(moves); ///computes all possible moves that the computer can make based off of generated future games.
 	//assert(!moves.empty( ));
 
 	// Evaluate each possible legal move, saving the index of the best
@@ -152,32 +153,34 @@ void game::make_computer_move( )
 	best_value = INT_MIN;
 	while (!moves.empty( ))
 	{
-		future = clone( );
-		future->make_move(moves.front( ));
+		future = clone( ); ///clones the future game
+		future->make_move(moves.front( )); 
 		value = future->eval_with_lookahead(SEARCH_LEVELS, best_value);
-		delete future;
-		if (value >= best_value)
+		delete future; ///deletes generated future game.
+		if (value >= best_value) ///if new value is better than the last best move it will save the new best move.
 		{
 			best_value = value;
 			best_move = moves.front( );
 		}
-		moves.pop( );
+		moves.pop( ); ///pops best move.
 	}
 
 	// Make the best move.
-	make_move(best_move);
+	make_move(best_move); ///makes the best possible move.
 }
 
-void game::make_human_move( ) {
-	string move;
+void game::make_human_move( )
+/// This function allows the human player to make a move. 
+{
+	string move; ///holds entered move
 
-	move = get_user_move( );
-	while (!is_legal(move))
+	move = get_user_move( ); 
+	while (!is_legal(move)) ///checks if move is legal
 	{
-		display_message("Illegal move.\n");
-		move = get_user_move( );
+		display_message("Illegal move.\n"); ///displays this message if the move is illegal/
+		move = get_user_move( ); ///gets new move.
 	}
-	make_move(move);
+	make_move(move); ///makes move.
 }
 
 }
