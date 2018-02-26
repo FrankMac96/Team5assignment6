@@ -18,17 +18,14 @@ enum {\bfseries who} \{ {\bfseries H\+U\+M\+AN},
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classmain__savitch__14_1_1game_a4dbeaddb78059f7c5dcbf5cc4e026317}\label{classmain__savitch__14_1_1game_a4dbeaddb78059f7c5dcbf5cc4e026317}} 
-who {\bfseries play} ()
+who \mbox{\hyperlink{classmain__savitch__14_1_1game_a4dbeaddb78059f7c5dcbf5cc4e026317}{play}} ()
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classmain__savitch__14_1_1game_ac58bfc07db8e604b07d2039b2cf7ab51}\label{classmain__savitch__14_1_1game_ac58bfc07db8e604b07d2039b2cf7ab51}} 
-virtual void {\bfseries display\+\_\+message} (const std\+::string \&message) const
+virtual void \mbox{\hyperlink{classmain__savitch__14_1_1game_ac58bfc07db8e604b07d2039b2cf7ab51}{display\+\_\+message}} (const std\+::string \&message) const
 \item 
-\mbox{\Hypertarget{classmain__savitch__14_1_1game_a6504d401fcc8b138ae6342c2868c8a40}\label{classmain__savitch__14_1_1game_a6504d401fcc8b138ae6342c2868c8a40}} 
-virtual std\+::string {\bfseries get\+\_\+user\+\_\+move} () const
+virtual std\+::string \mbox{\hyperlink{classmain__savitch__14_1_1game_a6504d401fcc8b138ae6342c2868c8a40}{get\+\_\+user\+\_\+move}} () const
 \item 
 \mbox{\Hypertarget{classmain__savitch__14_1_1game_a5c1ab8b36fb977bbe9fe387e793e4ee5}\label{classmain__savitch__14_1_1game_a5c1ab8b36fb977bbe9fe387e793e4ee5}} 
 virtual who {\bfseries last\+\_\+mover} () const
@@ -48,9 +45,8 @@ virtual void {\bfseries counting\+Pieces} ()=0
 \mbox{\Hypertarget{classmain__savitch__14_1_1game_a98190a2bf784ce0f20533475754d136d}\label{classmain__savitch__14_1_1game_a98190a2bf784ce0f20533475754d136d}} 
 virtual void {\bfseries whos\+Turn} ()=0
 \item 
-\mbox{\Hypertarget{classmain__savitch__14_1_1game_a2f0d5338c12bd98d52fe2383ece5c45e}\label{classmain__savitch__14_1_1game_a2f0d5338c12bd98d52fe2383ece5c45e}} 
-virtual who {\bfseries winning} () const
-\item 
+virtual who \mbox{\hyperlink{classmain__savitch__14_1_1game_a2f0d5338c12bd98d52fe2383ece5c45e}{winning}} () const
+\begin{DoxyCompactList}\small\item\em This function evaluates the game board and calcutes which player is winning. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classmain__savitch__14_1_1game_a20597d0caa907aea47b27fed8be3759b}\label{classmain__savitch__14_1_1game_a20597d0caa907aea47b27fed8be3759b}} 
 virtual void {\bfseries make\+\_\+move} (const std\+::string \&move)
 \item 
@@ -81,6 +77,55 @@ virtual bool {\bfseries is\+\_\+legal} (const std\+::string \&move) const =0
 \mbox{\Hypertarget{classmain__savitch__14_1_1game_ac4c296f4370d8e5bb5ea74b638fb827d}\label{classmain__savitch__14_1_1game_ac4c296f4370d8e5bb5ea74b638fb827d}} 
 int {\bfseries move\+\_\+number}
 \end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmain__savitch__14_1_1game_ac58bfc07db8e604b07d2039b2cf7ab51}\label{classmain__savitch__14_1_1game_ac58bfc07db8e604b07d2039b2cf7ab51}} 
+\index{main\+\_\+savitch\+\_\+14\+::game@{main\+\_\+savitch\+\_\+14\+::game}!display\+\_\+message@{display\+\_\+message}}
+\index{display\+\_\+message@{display\+\_\+message}!main\+\_\+savitch\+\_\+14\+::game@{main\+\_\+savitch\+\_\+14\+::game}}
+\subsubsection{\texorpdfstring{display\+\_\+message()}{display\_message()}}
+{\footnotesize\ttfamily void main\+\_\+savitch\+\_\+14\+::game\+::display\+\_\+message (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{message }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+This function displays a message to the player through standard output. The parameter of this function is the meassage being displayed. \mbox{\Hypertarget{classmain__savitch__14_1_1game_a6504d401fcc8b138ae6342c2868c8a40}\label{classmain__savitch__14_1_1game_a6504d401fcc8b138ae6342c2868c8a40}} 
+\index{main\+\_\+savitch\+\_\+14\+::game@{main\+\_\+savitch\+\_\+14\+::game}!get\+\_\+user\+\_\+move@{get\+\_\+user\+\_\+move}}
+\index{get\+\_\+user\+\_\+move@{get\+\_\+user\+\_\+move}!main\+\_\+savitch\+\_\+14\+::game@{main\+\_\+savitch\+\_\+14\+::game}}
+\subsubsection{\texorpdfstring{get\+\_\+user\+\_\+move()}{get\_user\_move()}}
+{\footnotesize\ttfamily string main\+\_\+savitch\+\_\+14\+::game\+::get\+\_\+user\+\_\+move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+This function is used to generate a move by the user. The string answer is used to hold the move the player wishes to make. If the player cannot move, this function will alow the player to skip. The player can enter moves until a valid move is entered. \mbox{\Hypertarget{classmain__savitch__14_1_1game_a4dbeaddb78059f7c5dcbf5cc4e026317}\label{classmain__savitch__14_1_1game_a4dbeaddb78059f7c5dcbf5cc4e026317}} 
+\index{main\+\_\+savitch\+\_\+14\+::game@{main\+\_\+savitch\+\_\+14\+::game}!play@{play}}
+\index{play@{play}!main\+\_\+savitch\+\_\+14\+::game@{main\+\_\+savitch\+\_\+14\+::game}}
+\subsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily game\+::who main\+\_\+savitch\+\_\+14\+::game\+::play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This function produces a human move first, and then a computer move. The return value for this function is the winner of the game, or N\+E\+U\+T\+R\+AL for a tie. executes while the game is not over.
+
+displays board status
+
+checks whose turn it is.
+
+makes human move
+
+makes computer move.
+
+displays board status \mbox{\Hypertarget{classmain__savitch__14_1_1game_a2f0d5338c12bd98d52fe2383ece5c45e}\label{classmain__savitch__14_1_1game_a2f0d5338c12bd98d52fe2383ece5c45e}} 
+\index{main\+\_\+savitch\+\_\+14\+::game@{main\+\_\+savitch\+\_\+14\+::game}!winning@{winning}}
+\index{winning@{winning}!main\+\_\+savitch\+\_\+14\+::game@{main\+\_\+savitch\+\_\+14\+::game}}
+\subsubsection{\texorpdfstring{winning()}{winning()}}
+{\footnotesize\ttfamily game\+::who main\+\_\+savitch\+\_\+14\+::game\+::winning (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+This function evaluates the game board and calcutes which player is winning. 
+
+returns that the last\+\_\+mover is winning
+
+returns that the next\+\_\+mover is winning.
+
+returns neutral if the game is currently tied. 
+
+Reimplemented in \mbox{\hyperlink{classmain__savitch__14_1_1_othello_a4ea78b18eea66c944c0a9356349e0fd4}{main\+\_\+savitch\+\_\+14\+::\+Othello}}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

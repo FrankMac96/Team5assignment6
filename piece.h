@@ -1,4 +1,5 @@
-///Contains the class piece, alon with the declarations and definitions of its functions.
+/*! Contains the class piece, alon with the declarations and definitions 
+of its functions. */
 
 // Brock Ferrell
 // CS2401

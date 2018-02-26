@@ -423,7 +423,10 @@ void Othello::whosTurn() {
   }
 }
 
-void Othello::make_skips() {
+void Othello::make_skips()
+/// This function increments the value of skips. If this value ever reaches 2, the game  will end.
+/// This value reaches 2 only if the human and the computer both skip one after another.
+{
   skips++;
 }
 

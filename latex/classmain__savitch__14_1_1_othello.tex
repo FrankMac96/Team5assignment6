@@ -27,8 +27,7 @@ void {\bfseries make\+\_\+move} (const string \&move)
 \mbox{\Hypertarget{classmain__savitch__14_1_1_othello_abf872b8074bfa4c04119317dc3b39af2}\label{classmain__savitch__14_1_1_othello_abf872b8074bfa4c04119317dc3b39af2}} 
 void {\bfseries restart} ()
 \item 
-\mbox{\Hypertarget{classmain__savitch__14_1_1_othello_a3177234195a490eef52343d957e64b5d}\label{classmain__savitch__14_1_1_othello_a3177234195a490eef52343d957e64b5d}} 
-void {\bfseries make\+\_\+skips} ()
+void \mbox{\hyperlink{classmain__savitch__14_1_1_othello_a3177234195a490eef52343d957e64b5d}{make\+\_\+skips}} ()
 \item 
 \mbox{\Hypertarget{classmain__savitch__14_1_1_othello_a19f49edfbe82b84922877e00bc854ed8}\label{classmain__savitch__14_1_1_othello_a19f49edfbe82b84922877e00bc854ed8}} 
 void {\bfseries counting\+Pieces} ()
@@ -42,9 +41,8 @@ void {\bfseries whos\+Turn} ()
 \mbox{\Hypertarget{classmain__savitch__14_1_1_othello_a921d4ffa277b0250f187f20b9598ebb1}\label{classmain__savitch__14_1_1_othello_a921d4ffa277b0250f187f20b9598ebb1}} 
 void {\bfseries compute\+\_\+moves} (std\+::queue$<$ std\+::string $>$ \&moves) const
 \item 
-\mbox{\Hypertarget{classmain__savitch__14_1_1_othello_a4ea78b18eea66c944c0a9356349e0fd4}\label{classmain__savitch__14_1_1_othello_a4ea78b18eea66c944c0a9356349e0fd4}} 
-who {\bfseries winning} () const
-\end{DoxyCompactItemize}
+who \mbox{\hyperlink{classmain__savitch__14_1_1_othello_a4ea78b18eea66c944c0a9356349e0fd4}{winning}} () const
+\begin{DoxyCompactList}\small\item\em This function evaluates the game board and calcutes which player is winning. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -67,6 +65,33 @@ int {\bfseries b}
 int {\bfseries w}
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmain__savitch__14_1_1_othello_a3177234195a490eef52343d957e64b5d}\label{classmain__savitch__14_1_1_othello_a3177234195a490eef52343d957e64b5d}} 
+\index{main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}!make\+\_\+skips@{make\+\_\+skips}}
+\index{make\+\_\+skips@{make\+\_\+skips}!main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}}
+\subsubsection{\texorpdfstring{make\+\_\+skips()}{make\_skips()}}
+{\footnotesize\ttfamily void main\+\_\+savitch\+\_\+14\+::\+Othello\+::make\+\_\+skips (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This function increments the value of skips. If this value ever reaches 2, the game will end. This value reaches 2 only if the human and the computer both skip one after another. \mbox{\Hypertarget{classmain__savitch__14_1_1_othello_a4ea78b18eea66c944c0a9356349e0fd4}\label{classmain__savitch__14_1_1_othello_a4ea78b18eea66c944c0a9356349e0fd4}} 
+\index{main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}!winning@{winning}}
+\index{winning@{winning}!main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}}
+\subsubsection{\texorpdfstring{winning()}{winning()}}
+{\footnotesize\ttfamily game\+::who main\+\_\+savitch\+\_\+14\+::\+Othello\+::winning (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This function evaluates the game board and calcutes which player is winning. 
+
+returns that the last\+\_\+mover is winning
+
+returns that the next\+\_\+mover is winning.
+
+returns neutral if the game is currently tied. 
+
+Reimplemented from \mbox{\hyperlink{classmain__savitch__14_1_1game_a2f0d5338c12bd98d52fe2383ece5c45e}{main\+\_\+savitch\+\_\+14\+::game}}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
