@@ -1,4 +1,5 @@
-/// Contains the class piece, along with the declarations and definitions of its functions.
+/// @file piece.h
+//Contains the class piece, along with the declarations and definitions of its functions.
 
 // Brock Ferrell
 // CS2401
