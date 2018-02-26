@@ -1,3 +1,5 @@
+///Contains the implementation for the functions in othello.h, also includes othello.h
+
 // Brock Ferrell
 // CS2401
 // November 23, 2015

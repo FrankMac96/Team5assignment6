@@ -184,6 +184,3 @@ void game::make_human_move( )
 }
 
 }
-
-
-

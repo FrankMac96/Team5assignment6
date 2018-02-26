@@ -1,3 +1,5 @@
+///Creates a class called Othello and declares its functions. Includes game.h , piece.h, and colors.h
+
 // Brock Ferrell
 // CS2401
 // November 23, 2015
