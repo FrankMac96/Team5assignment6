@@ -1,16 +1,17 @@
 // File: game.cxx
-
-#include <cassert>    // Provides assert
-#include <climits>    // Provides INT_MAX and INT_MIN
-#include <iostream>   // Provides cin, cout
-#include <queue>      // Provides queue<string>
-#include <string>     // Provides string
-#include "game.h"     // Provides definition of game class
+///Assignment6 Documentation TESTTEST
+/// This file contains the functions for game.cc. These functions allow the player to play othello until the game reaches a winner or tie. 
+#include <cassert>    /// Provides assert
+#include <climits>    /// Provides INT_MAX and INT_MIN
+#include <iostream>   /// Provides cin, cout
+#include <queue>      /// Provides queue<string>
+#include <string>     /// Provides string
+#include "game.h"     /// Provides definition of game class
 using namespace std;
 
 namespace main_savitch_14
 {
-//*************************************************************************
+//************************************************************************* 
 // STATIC MEMBER CONSTANTS
 // const int game::SEARCH_LEVELS;
 
@@ -21,6 +22,9 @@ game::who game::play( )
 // The play function should not be overridden. It plays one round of the
 // game, with the human player moving first and the computer second.
 // The return value is the winner of the game (or NEUTRAL for a tie).
+
+/// This function  produces a human move first, and then a computer move.
+/// The return value for this function is the winner of the game, or NEUTRAL for a tie.
 {
 	restart( );
 
@@ -45,12 +49,17 @@ game::who game::play( )
 //*************************************************************************
 // OPTIONAL VIRTUAL FUNCTIONS (overriding these functions is optional)
 
+
 void game::display_message(const string& message) const
+/// This function displays a message to the player through standard output. 
+/// The parameter  of this function is the meassage being displayed. 
 {
 	cout << message;
 }
 
 string game::get_user_move( ) const
+/// This function is used to generate a move by the user. The string answer is used to hold the move the player wishes to make.
+/// If the player cannot move, this function will alow the player to skip. The player can enter moves until a valid move is entered.
 {
 	string answer;
 
@@ -60,7 +69,9 @@ string game::get_user_move( ) const
 	return answer;
 }
 
-game::who game::winning()const {
+game::who game::winning()const
+/// This function evaluates the game board and calcutes which player is winning.
+{
 
 	int value = evaluate();
 
@@ -75,22 +86,22 @@ game::who game::winning()const {
 }
 
 //*************************************************************************
-// PRIVATE FUNCTIONS (these are the same for every game)
+/// PRIVATE FUNCTIONS (these are the same for every game)
 
 int game::eval_with_lookahead(int look_ahead, int beat_this)
-// Evaluate a board position with lookahead.
-// --int look_aheads:  How deep the lookahead should go to evaluate the move.
-// --int beat_this: Value of another move that we're considering. If the
-// current board position can't beat this, then cut it short.
-// The return value is large if the position is good for the player who just
-// moved.
+/// Evaluates a board position with lookahead.
+/// --int look_aheads:  How deep the lookahead should go to evaluate the move.
+/// --int beat_this: Value of another move that we're considering. If the
+/// current board position can't beat this, then cut it short.
+/// The return value is large if the position is good for the player who just
+/// moved.
 {
-	queue<string> moves;   // All possible opponent moves
-	int value;             // Value of a board position after opponent moves
-	int best_value;        // Evaluation of best opponent move
-	game* future;          // Pointer to a future version of this game
+	queue<string> moves;   /// All possible opponent moves
+	int value;             /// Value of a board position after opponent moves
+	int best_value;        /// Evaluation of best opponent move
+	game* future;          /// Pointer to a future version of this game
 
-	// Base case:
+	/// Base case:
 	if (look_ahead == 0 || is_game_over( ))
 	{
 		if (last_mover( ) == COMPUTER)
@@ -99,11 +110,10 @@ int game::eval_with_lookahead(int look_ahead, int beat_this)
 			return -evaluate( );
 	}
 
-	// Recursive case:
-	// The level is above 0, so try all possible opponent moves. Keep the
-	// value of the best of these moves from the opponent's perspective.
+	/// Recursive case:
+
 	compute_moves(moves);
-	// assert(!moves.empty( ));
+	/// assert(!moves.empty( ));
 	best_value = INT_MIN;
 	while (!moves.empty( ))
 	{
