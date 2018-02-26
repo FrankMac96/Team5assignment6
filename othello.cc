@@ -428,7 +428,10 @@ void Othello::make_skips() {
 }
 
 game::who Othello::winning()const {
-
+/// No parameters are used in the winning function
+/// This function counts the amount of piece there are 
+/// on the game board and if there are more piece then the 
+/// other then one wins or if there are equal pieces then its a tie.
   if (black > white) {
     return last_mover();
   } else if (white > black) {
