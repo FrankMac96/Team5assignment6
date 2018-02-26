@@ -1,0 +1,90 @@
+\hypertarget{classmain__savitch__14_1_1Othello}{}\section{main\+\_\+savitch\+\_\+14\+:\+:Othello Class Reference}
+\label{classmain__savitch__14_1_1Othello}\index{main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}}
+
+
+Inheritance diagram for main\+\_\+savitch\+\_\+14\+:\+:Othello\+:
+% FIG 0
+
+
+Collaboration diagram for main\+\_\+savitch\+\_\+14\+:\+:Othello\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries display\+\_\+status} () const \hypertarget{classmain__savitch__14_1_1Othello_a471f0e8f0e63ed32d764682f60110267}{}\label{classmain__savitch__14_1_1Othello_a471f0e8f0e63ed32d764682f60110267}
+
+\item 
+int {\bfseries evaluate} () const \hypertarget{classmain__savitch__14_1_1Othello_a1b3239a14882cbc7e7bd44c0b6828514}{}\label{classmain__savitch__14_1_1Othello_a1b3239a14882cbc7e7bd44c0b6828514}
+
+\item 
+bool {\bfseries is\+\_\+game\+\_\+over} () const \hypertarget{classmain__savitch__14_1_1Othello_a4387d20f953aab54025760ec3f72f7ca}{}\label{classmain__savitch__14_1_1Othello_a4387d20f953aab54025760ec3f72f7ca}
+
+\item 
+bool {\bfseries is\+\_\+legal} (const string \&move) const \hypertarget{classmain__savitch__14_1_1Othello_ab4fb0040d5e1dbe34c33fa11a82285cf}{}\label{classmain__savitch__14_1_1Othello_ab4fb0040d5e1dbe34c33fa11a82285cf}
+
+\item 
+void {\bfseries make\+\_\+move} (const string \&move)\hypertarget{classmain__savitch__14_1_1Othello_a1066b280efa5cb41039585669282fe06}{}\label{classmain__savitch__14_1_1Othello_a1066b280efa5cb41039585669282fe06}
+
+\item 
+void \hyperlink{classmain__savitch__14_1_1Othello_abf872b8074bfa4c04119317dc3b39af2}{restart} ()
+\item 
+void {\bfseries make\+\_\+skips} ()\hypertarget{classmain__savitch__14_1_1Othello_a3177234195a490eef52343d957e64b5d}{}\label{classmain__savitch__14_1_1Othello_a3177234195a490eef52343d957e64b5d}
+
+\item 
+void {\bfseries counting\+Pieces} ()\hypertarget{classmain__savitch__14_1_1Othello_a19f49edfbe82b84922877e00bc854ed8}{}\label{classmain__savitch__14_1_1Othello_a19f49edfbe82b84922877e00bc854ed8}
+
+\item 
+void {\bfseries whos\+Turn} ()\hypertarget{classmain__savitch__14_1_1Othello_a21440dbb4511812a76c578a5f546710b}{}\label{classmain__savitch__14_1_1Othello_a21440dbb4511812a76c578a5f546710b}
+
+\item 
+\hyperlink{classmain__savitch__14_1_1game}{game} $\ast$ {\bfseries clone} () const \hypertarget{classmain__savitch__14_1_1Othello_ab5a505f8a6ffd860376bf074c57e8a5f}{}\label{classmain__savitch__14_1_1Othello_ab5a505f8a6ffd860376bf074c57e8a5f}
+
+\item 
+void {\bfseries compute\+\_\+moves} (std\+::queue$<$ std\+::string $>$ \&moves) const \hypertarget{classmain__savitch__14_1_1Othello_aae15562565348c574b8e4c0b7782d19f}{}\label{classmain__savitch__14_1_1Othello_aae15562565348c574b8e4c0b7782d19f}
+
+\item 
+who \hyperlink{classmain__savitch__14_1_1Othello_a8934d1b63f73c03dae9629dbe03955d7}{winning} () const \hypertarget{classmain__savitch__14_1_1Othello_a8934d1b63f73c03dae9629dbe03955d7}{}\label{classmain__savitch__14_1_1Othello_a8934d1b63f73c03dae9629dbe03955d7}
+
+\begin{DoxyCompactList}\small\item\em This function evaluates the game board and calcutes which player is winning. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries black}\hypertarget{classmain__savitch__14_1_1Othello_a2eed818925f68d5678b78107a3298138}{}\label{classmain__savitch__14_1_1Othello_a2eed818925f68d5678b78107a3298138}
+
+\item 
+int {\bfseries white}\hypertarget{classmain__savitch__14_1_1Othello_a7d5f59b1e581ed7a8145debeecf4f310}{}\label{classmain__savitch__14_1_1Othello_a7d5f59b1e581ed7a8145debeecf4f310}
+
+\item 
+int {\bfseries skips}\hypertarget{classmain__savitch__14_1_1Othello_a85d4ce17512d8dbf85a313a27eea0644}{}\label{classmain__savitch__14_1_1Othello_a85d4ce17512d8dbf85a313a27eea0644}
+
+\item 
+int {\bfseries open\+Spots}\hypertarget{classmain__savitch__14_1_1Othello_a15045e3e94c34afe08240885e230d502}{}\label{classmain__savitch__14_1_1Othello_a15045e3e94c34afe08240885e230d502}
+
+\item 
+int {\bfseries b}\hypertarget{classmain__savitch__14_1_1Othello_a98fbc46241d2f5e05ccb4b66f11535bf}{}\label{classmain__savitch__14_1_1Othello_a98fbc46241d2f5e05ccb4b66f11535bf}
+
+\item 
+int {\bfseries w}\hypertarget{classmain__savitch__14_1_1Othello_a1b11c5fe33e30a94ed39e8cb55caf37e}{}\label{classmain__savitch__14_1_1Othello_a1b11c5fe33e30a94ed39e8cb55caf37e}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\index{main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}!restart@{restart}}
+\index{restart@{restart}!main\+\_\+savitch\+\_\+14\+::\+Othello@{main\+\_\+savitch\+\_\+14\+::\+Othello}}
+\subsubsection[{\texorpdfstring{restart()}{restart()}}]{\setlength{\rightskip}{0pt plus 5cm}void main\+\_\+savitch\+\_\+14\+::\+Othello\+::restart (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classmain__savitch__14_1_1Othello_abf872b8074bfa4c04119317dc3b39af2}{}\label{classmain__savitch__14_1_1Othello_abf872b8074bfa4c04119317dc3b39af2}
+No Parameters, resets the game to the original starting state. 
+
+Reimplemented from \hyperlink{classmain__savitch__14_1_1game}{main\+\_\+savitch\+\_\+14\+::game}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+othello.\+h\item 
+othello.\+cc\end{DoxyCompactItemize}

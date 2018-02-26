@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['readme',['README',['../md__r_e_a_d_m_e.html',1,'']]]
+  ['othello',['Othello',['../classmain__savitch__14_1_1Othello.html',1,'main_savitch_14']]]
 ];

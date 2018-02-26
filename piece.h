@@ -28,7 +28,11 @@ public:
 	}
 
 	bool is_blank()const {return theColor == blank;}
-	bool is_black()const {return theColor == black;}
+	bool is_black()const 
+	{
+		/// Returns true if the color of the piece is black.
+		return theColor == black;
+	}
 	bool is_white()const {return theColor == white;}
 	void set_white() {theColor = white;}
 	void set_black() {theColor = black;}

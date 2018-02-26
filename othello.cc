@@ -193,6 +193,8 @@ void Othello::make_move(const string& move) {
 
 
 void Othello::restart() {
+/// No Parameters, resets the game to the original starting state.
+
 
   gameBoard[3][3].set_white();
   gameBoard[3][4].set_black();
