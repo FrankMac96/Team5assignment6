@@ -16,6 +16,10 @@ public:
 
 	void flip()
 	{
+		/// No Parameters are used in the flip function.
+		/// This function fliped a opposite color piece. 
+		/// So if a player is black and comes across a white piece 
+		/// that piece will flip from white to black.
 		if (theColor == white) {
 			theColor = black;
 		}
@@ -25,7 +29,11 @@ public:
 	}
 
 	bool is_blank()const {return theColor == blank;}
-	bool is_black()const {return theColor == black;}
+	bool is_black()const 
+	{
+		/// Returns true if the color of the piece is black.
+		return theColor == black;
+	}
 	bool is_white()const {return theColor == white;}
 	void set_white() {theColor = white;}
 	void set_black() {theColor = black;}

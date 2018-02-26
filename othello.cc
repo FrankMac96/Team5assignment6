@@ -193,6 +193,8 @@ void Othello::make_move(const string& move) {
 
 
 void Othello::restart() {
+/// No Parameters, resets the game to the original starting state.
+
 
   gameBoard[3][3].set_white();
   gameBoard[3][4].set_black();
@@ -431,7 +433,10 @@ void Othello::make_skips()
 }
 
 game::who Othello::winning()const {
-
+/// No parameters are used in the winning function
+/// This function counts the amount of piece there are 
+/// on the game board and if there are more piece then the 
+/// other then one wins or if there are equal pieces then its a tie.
   if (black > white) {
     return last_mover();
   } else if (white > black) {
